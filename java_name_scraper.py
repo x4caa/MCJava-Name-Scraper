@@ -10,9 +10,10 @@ characters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "
 endings = [c1 + c2 + c3 for c1 in characters for c2 in characters for c3 in characters]
 random.shuffle(endings)
 
+#wouldnt suggest changing the 2.1, already had something record for average time per request
 timetocomplete = len(endings) * 2.1 / 60 / 60
 #VERY ROUGH ESTIMATE
-print(f"Estimated time to complete {len(endings)} permutations: {timetocomplete} hours")
+print(f"Estimated time to complete {len(endings)} permutations: {timetocomplete} hours | Keep in mind this estimate is very rough and does not account for api limits or other factors.")
 
 NOTAVAIL = 0
 AVAIL = 0
